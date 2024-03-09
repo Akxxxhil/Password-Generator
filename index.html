@@ -1,11 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Geneartor</title>
 </head>
+
 <body>
-    
+    <div class="wrapper">
+        <h1>Password Geneartor</h1>
+        <div class="displayClass">
+            <input readonly placeholder="Password" />
+            <button>
+                <span></span>
+                <!-- Feather icon -->
+                <img src="copy.svg" alt="" height="10px" width="23px" />
+            </button>
+        </div>
+
+        <div class="input-container">
+
+            <!-- password length -->
+
+            <div class="pasword-length">
+                <p>Password length</p>
+                <p>0</p>
+            </div>
+            <!-- password slider -->
+
+            <input type="range" min="1" max="20" class="slider" step="1" />
+
+            <!--checkboxes container  -->
+
+            <div class="checkboxes">
+                <div>
+                    <input type="checkbox" name="" id="Uppercase-checkbox">
+                    <label for="">Include Uppercase Letters</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="Lowercase-checkbox">
+                    <label for="">Include Lowercase Letters</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="Numbers-checkbox">
+                    <label for="">Include Numbers</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="Symbols-checkbox">
+                    <label for="">Include Symbols</label>
+                </div>
+               
+            </div>
+
+            <!--Strength container  -->
+            <div>
+                <p>Strength</p>
+                <div></div>
+            </div>
+
+            <!--generate passsword button container  -->
+            <button>Generate Button</button>
+        </div>
+    </div>
 </body>
+
 </html>
